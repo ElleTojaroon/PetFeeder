@@ -68,6 +68,15 @@
 	margin-top: 100;
 }
 
+@import url('//netdna.bootstrapcdn.com/bootstrap/2.3.2/css/bootstrap.min.css');
+@import url('http://jdewit.github.io/bootstrap-timepicker/css/bootstrap-timepicker.min.css');
+
+#radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
+
+<input id="ex8" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
 
 .LearnMore p {
 	color: #668cad;
