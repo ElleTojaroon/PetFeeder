@@ -42,7 +42,7 @@
 }
 
 #todaySchedule {
-	margin-top: -200;
+	margin-top: -250;
 }
 
 .schedule {
@@ -123,11 +123,12 @@
 #navbar
 {
 	display:table-cell;
-	margin: 20px;
+	margin: 30px;
+	margin-right: 50px;
 	padding: 10px;
 	list-style-type: none;
 	border-right: 1px solid #ccc;
-	width: 200px;
+	width: 250px;
 	text-align:right;
 }
 #navbar li
@@ -135,15 +136,41 @@
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
-#navbar li p {
+#navbar li a {
 	text-decoration: none;
 	padding: 10px;
 	color: #000000;
 	display:block;
 }
-#navbar li p.active, #navbar li p:hover{
+#navbar li a.active, #navbar li a:hover{
 	background-color: #FAEBD7;
 	color: #000000;
 }
+#main {
+	display: table-cell;
+	padding-left: 20px;
+	padding-bottom:50px;
+}
 
-
+.feeding {
+	margin-top:-50;
+    width:500px;
+}
+.feeding p {
+	margin:0;
+}
+.feeding p {
+	font-size:18px;
+}
+.scheduled {
+	width:600px;
+}
+.scheduled p {
+	font-size:18px;
+}
+#main-history {
+	display:none;
+}
+#main-schedulenew {
+	display:none;
+}

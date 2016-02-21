@@ -12,10 +12,11 @@
 			var elements = ["comingup", "history", "schedulenew"];
 			for (var i = 0; i < elements.length; i++) {
 				if (elements[i] === id) {
-					document.getElementById(elements[i]).class = "active";
-					console.log(elements[i]);
+					document.getElementById(elements[i]).className = "active";
+					document.getElementById("main-" + elements[i]).style.display = "block";
 				} else {
-					document.getElementById(elements[i]).class = "inactive";
+					document.getElementById(elements[i]).className = "inactive";
+					document.getElementById("main-" + elements[i]).style.display = "none";
 				}
 			}
 		}
@@ -70,7 +71,7 @@
 
 				<td rowspan="3">
 				<td>
-					<h3 id="todaySchedule">Today schedule</h3>
+					<h3 id="todaySchedule">Today's schedule</h3>
 					<div class="schedule">
 					<p>
 						<img width="25" src="css/img/checkbox.png" class="info-icon">
@@ -125,6 +126,27 @@
 						<center><a href="#">Edit my profile</a></center>
 					</div>
 				</td>
+				<td>
+			    	<div class="feeding">
+			    	<h3>Currently</h3>
+			    		<p>
+			    			Doge has eaten
+			    		</p>
+			    		<div class="progress">
+							<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+								 8 / 8 oz of food so far
+							</div>
+						</div>
+						<p>
+							Doge has drank
+						</p>
+			    		<div class="progress">
+							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+								 8 / 10 fl oz of water so far
+							</div>
+						</div>
+			    	</div>
+				</td>
 			</tr>
 
 		</table>
@@ -132,10 +154,45 @@
 	</div>
 
 	<ul id="navbar">
-          <li><p class="active" id="comingup" onclick="toggleActive('comingup')">Coming Up</a></li>
-          <li><p id="history" onclick="toggleActive('history')">History</a></li>
-          <li><p id="schedulenew" onclick="toggleActive('schedulenew')">Schedule New</p>
-        </ul>
+		<li><a class="active" id="comingup" href="" onclick="toggleActive('comingup');return false;">Coming Up</a></li>
+		<li><a id="history" href="" onclick="toggleActive('history');return false;">History</a></li>
+		<li><a id="schedulenew" href="" onclick="toggleActive('schedulenew');return false;">Schedule New</a>
+    </ul>
+    <div id="main">
+    	<div class="scheduled" id="main-comingup">
+    		<h3>Coming Up</h3>
+    		<p>Today at 12PM, Doge will have for lunch</p>
+    		<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					 12 oz of food
+				</div>
+			</div>
+			<p>and</p>
+    		<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					 14 oz of water
+				</div>
+			</div>
+    	</div>
+    	<div class="scheduled" id="main-history">
+    		<h3>Coming Up</h3>
+    		<p>Today at 12PM, Doge will have for lunch</p>
+    		<div class="progress">
+				<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					 12 oz of food
+				</div>
+			</div>
+			<p>and</p>
+    		<div class="progress">
+				<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+					 14 oz of water
+				</div>
+			</div>
+    	</div>
+    	<div class="scheduled" id="main-schedulenew">
+    	</div>
+
+    </div>
 
 
 
