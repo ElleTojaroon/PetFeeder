@@ -156,8 +156,25 @@
 	margin-left: 30px;
 }
 
-.ad1 p {
+.ad1 {
 	float: left;
+	margin-left: 300;
+}
+
+#adPic1 {
+	width: 200px;
+	float: left;
+	margin-left: 50;
+}
+
+.ad2 {
+	float: right;
+	
+}
+
+#adPic2 {
+	width: 200px;
+	float: right;
 }
 
 
