@@ -7,6 +7,39 @@
 	<title>PetFeeder</title>
 
 	<link rel="stylesheet" type="text/css" href="css/myAccount.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+	<script>
+		$('.timepicker').timepicker();
+	</script>
+	<script>
+		$('#radioBtn a').on('click', function(){
+    var sel = $(this).data('title');
+    var tog = $(this).data('toggle');
+    $('#'+tog).prop('value', sel);
+    
+    $('a[data-toggle="'+tog+'"]').not('[data-title="'+sel+'"]').removeClass('active').addClass('notActive');
+    $('a[data-toggle="'+tog+'"][data-title="'+sel+'"]').removeClass('notActive').addClass('active');
+	})
+
+
+
+
+	</script>
+
+	<script>
+		// With JQuery
+		$("#ex8").slider({
+			tooltip: 'always'
+		});
+
+		// Without JQuery
+		var slider = new Slider("#ex8", {
+			tooltip: 'always'
+		});
+	</script>
+
 	<script>
 		function toggleActive(id) {
 			var elements = ["comingup", "history", "schedulenew"];
@@ -20,6 +53,10 @@
 			}
 		}
 	</script>
+
+
+
+
 </head>
 	
 <body>
@@ -110,13 +147,8 @@
 					</p>
 					</div>
 
-
-
 				</td>
-
-
 				</td>
-
 
 			</tr>
 			<tr>
@@ -131,20 +163,55 @@
 		</div>
 	</div>
 
+
 	<ul id="navbar">
           <li><p class="active" id="comingup" onclick="toggleActive('comingup')">Coming Up</a></li>
           <li><p id="history" onclick="toggleActive('history')">History</a></li>
           <li><p id="schedulenew" onclick="toggleActive('schedulenew')">Schedule New</p>
         </ul>
 
-
-
-	<div class="promotions">
-		<div class="container">
-			<a href="#" style="color: inherit; text-decoration: none;"><h2>What set us apart</h2></a>
-			<p>Reasons why people love PetFeeder</p>
+    
+	<div class="container">
+    <h3>Schedule new feeding</h3>
+    <form>
+        Time  
+        <input type="text" name="start_time" class="timepicker" placeholder="hh:mm PM" data-default-time="false" style="margin-left: 10">
+    </form>
+    	
+	    <div class="row">
+	        
+	        <div class="form-group">
+	        	
+	    		<div class="col-sm-7 col-md-7">
+	    			<div class="input-group">
+	    				
+	    				<div id="radioBtn" class="btn-group">
+	    					<a class="btn btn-primary btn-sm active" data-toggle="fun" data-title="Y">Breakfast</a>
+	                        <a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="X">Lunch</a>
+	    					<a class="btn btn-primary btn-sm notActive" data-toggle="fun" data-title="N">Dinner</a>
+	    				</div>
+	    				
+	    			</div>
+	    		</div>
+	    		
+	    	</div>
+	    	
 		</div>
+		
+	    <br /><br />
 	</div>
+	
+
+	<!-- end of radio buttons -->
+
+	<!-- slider bars -->
+	<span style="margin-left:45">Amount of food</span>
+	<span><img src="css/img/slider1.png" style="width: 300"></></span>
+	<br>
+	<span style="margin-left:45">Amount of water</span>
+	<span><img src="css/img/slider2.png" style="width: 300"></span>
+
+	<!-- end of slider bars -->
 
 
 
