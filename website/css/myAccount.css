@@ -120,4 +120,30 @@
 	/*float: right;*/
 }
 
+#navbar
+{
+	display:table-cell;
+	margin: 20px;
+	padding: 10px;
+	list-style-type: none;
+	border-right: 1px solid #ccc;
+	width: 200px;
+	text-align:right;
+}
+#navbar li
+{
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+#navbar li p {
+	text-decoration: none;
+	padding: 10px;
+	color: #000000;
+	display:block;
+}
+#navbar li p.active, #navbar li p:hover{
+	background-color: #FAEBD7;
+	color: #000000;
+}
+
 

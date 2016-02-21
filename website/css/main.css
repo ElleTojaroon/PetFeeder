@@ -74,7 +74,7 @@
 }
 
 #adPic1 {
-	width: 200px;
+	width: 300px;
 	/*float: left;*/
 	margin-left: 50;
 }
@@ -87,6 +87,18 @@
 #adPic2 {
 	width: 200px;
 	/*float: right;*/
+}
+p {
+    font-size:20px;
+}
+.title {
+    color: #000000;
+    font-family: 'Raleway',sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 36px;
+    margin: 0 0 24px;
+    text-align: center;
 }
 
 

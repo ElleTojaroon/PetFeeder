@@ -7,6 +7,19 @@
 	<title>PetFeeder</title>
 
 	<link rel="stylesheet" type="text/css" href="css/myAccount.css">
+	<script>
+		function toggleActive(id) {
+			var elements = ["comingup", "history", "schedulenew"];
+			for (var i = 0; i < elements.length; i++) {
+				if (elements[i] === id) {
+					document.getElementById(elements[i]).class = "active";
+					console.log(elements[i]);
+				} else {
+					document.getElementById(elements[i]).class = "inactive";
+				}
+			}
+		}
+	</script>
 </head>
 	
 <body>
@@ -15,25 +28,15 @@
 		<div class="container">
 			
 			<ul class="pull-left">
-				<li><a target="_blank" href="#">Feed Me!</a></li>
-			</ul>
-
+				<li><a target="_blank" href="./index.html">Pet Feeder</a></li>
 			<ul class="pull-right">
 				<li><a href="#">Pet profile</a></li>
 				<li><a href="#">Schedule feedings</a></li>
 				<li><a href="#">Feeding history</a></li>
 
-				<li><script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js"></script>
-					<div id="SkypeButton_Call_elle_elle-555_1">
-					 <script type="text/javascript">
-					 Skype.ui({
-					 "name": "call",
-					 "element": "SkypeButton_Call_elle_elle-555_1",
-					 "participants": ["elle_elle-555"],
-					 "imageSize": 24
-					 });
-					 </script>
-					</div></li>
+				<li>
+				<a href="skype:elle_elle-555">Skype Doge!</a></li>
+				</li>
 			</ul>
 
 		</div>
@@ -124,96 +127,15 @@
 				</td>
 			</tr>
 
-
-
-		
-
-
-		
-
-
-
-
-
 		</table>
-
-
-
-
-
-
-
-
-
 		</div>
 	</div>
 
-	<table>
-	<col width="600">
-	<col width="600">
-	<tr>
-		<td>
-		<span>
-			<center>
-			<img src="css/img/dog1.jpg" id="adPic1">
-			</center>
-		</span>
-		</td>
-		<td>
-			<span class="ad1">
-		        <span class="container">
-		        	<center>
-		            <p>Header1</p>
-		            <p>Blah</p>
-		            </center>
-		         </span>
-
-		    </span>
-	    </td>
-    </tr>
-    <tr>
-		<td>
-			<span class="ad2">
-		        <span class="container">
-		        	<center>
-		            <p>Header2</p>
-		            <p>Blah</p>
-		            </center>
-		         </span>
-
-		    </span>
-		</td>
-		<td>
-			<span>
-				<center>
-				<img src="css/img/dog2.jpg" id="adPic2">
-				</center>
-			</span>
-
-			
-	    </td>
-    </tr>
-      <tr>
-		<td>
-		<center>
-			<span><img src="css/img/dog3.jpg" id="adPic1"></span>
-		</center>
-		</td>
-		<td>
-			<span class="ad3">
-		        <span class="container">
-		        	<center>
-		            <p>Header2</p>
-		            <p>Blah</p>
-		            </center>
-		         </span>
-
-		    </span>
-	    </td>
-	</tr>
-    </table>
-
-
+	<ul id="navbar">
+          <li><p class="active" id="comingup" onclick="toggleActive('comingup')">Coming Up</a></li>
+          <li><p id="history" onclick="toggleActive('history')">History</a></li>
+          <li><p id="schedulenew" onclick="toggleActive('schedulenew')">Schedule New</p>
+        </ul>
 
 
 
