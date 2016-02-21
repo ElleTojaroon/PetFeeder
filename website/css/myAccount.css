@@ -1,0 +1,92 @@
+.nav {
+	background: #000;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 15px 10px;
+	text-transform: uppercase;
+}
+
+.nav li a:hover {
+	background: #888;
+}
+
+.jumbotron {
+	background-color: #FAEBD7;
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.LearnMore p {
+	color: #668cad;
+}
+
+.LearnMore li a {
+	display: block;
+	margin-left: 0px;
+	margin-bottom: 6px;
+	padding-left: 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d5d5e0;
+	color: #668cad;
+	font-size: 14px;
+	font-weight: 300;
+	text-decoration: none;
+	text-align: left;
+}
+
+.LearnMore li a:hover {
+	color: rgba(0, 140, 255, 0.84);
+}
+
+.info-icon {
+	float: left;
+}
+
+.footer-link.with-icon {
+	margin-left: 30px;
+}
+
+.ad1 p h4{
+	/*float: left;*/
+	margin-left: 300;
+}
+
+#adPic1 {
+	width: 200px;
+	/*float: left;*/
+	margin-left: 50;
+}
+
+.ad2 {
+	/*float: right;*/
+	
+}
+
+#adPic2 {
+	width: 200px;
+	/*float: right;*/
+}
+
+
