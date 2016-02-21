@@ -157,24 +157,24 @@
 }
 
 .ad1 {
-	float: left;
+	/*float: left;*/
 	margin-left: 300;
 }
 
 #adPic1 {
 	width: 200px;
-	float: left;
+	/*float: left;*/
 	margin-left: 50;
 }
 
 .ad2 {
-	float: right;
+	/*float: right;*/
 	
 }
 
 #adPic2 {
 	width: 200px;
-	float: right;
+	/*float: right;*/
 }
 
 
